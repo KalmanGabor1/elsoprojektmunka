@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Űrlap helyezhető elemek</title>
+</head>
+<body>
+    <form>
+        <!--Gomb felirattal-->
+        <input type="button" value="ez valamit csinál egyszer">
+        <!--gomb máshogy-->
+        <button><img src="letöltés.jpg"></button>
+        <br/>
+        <label>Büntetett előélet</label>
+        <input type="checkbox">
+        <br />
+        <!--email ellenőrzése-->
+        <label>Email cím</label>
+        <input type="email">
+        <input type="submit" value="Adatok elküldése">
+        <br/>
+        <label>fogainak száma</label>
+        <input type="number" min="0" max="32">
+        <input type="submit" value="adatok elküldése">
+        <br/>
+        <!--szemszín-->
+        <label>szeme színe</label>
+        <input type="color">
+        <br/>
+        <!--dátum-->
+        <label>Születés dátuma</label>
+        <input type="date">
+        <br/>
+        <!--idő-->
+        <label>Születés dátuma</label>
+        <input type="time">
+        <!--ez egy rádiógomb lesz-->
+        <label>kérek reklámanyagot</label>
+        <input type="radio">
+        <!--nem lehet visszavonni-->
+        <fieldset> <!--ez rajzolja a szegélyt-->
+            <legend>Neme</legend>
+            <label >férfi</label>
+            <input type="radio" name="nem">
+            <label >nő</label>
+            <input type="radio" name="nem">
+            <label >egyéb</label>
+            <input type="radio" name="nem">
+            </fieldset>
+            <!--ahol name tulajdonság ugyanaz azok közül csak egyet lehet választani-->
+            <br/>
+            <!--Választani lehet elemeket-->
+            <select>
+                <optgroup label= "madarak">
+                    <option>Fácán</option>
+                    <option selected="selected">veréb</option> <!--ez lesz az első amit felajánl-->
+                    </optgroup>
+                    <optgroup label="halak">
+                        <option>ponty</option>
+                        <option>keszeg</option>
+                    </optgroup>
+                    </select>
+                <datalist id="colors"> <!--ezekből lehet majd választani--> 
+                    <option>kék</option> 
+                    <option>barna</option>
+                    <option>zöld</option> 
+                 </datalist>
+                 <input list="colors"> 
+                 <label>hajszín</label>
+                 <input list="colors">
+                 <textarea placeholder="ide írd ha még akarsz valamit"></textarea> <!--megjegyzésdoboz-->
+                 
+            
+
+    </form>
+
+</body>
+</html>
